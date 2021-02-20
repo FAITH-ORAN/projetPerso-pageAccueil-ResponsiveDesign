@@ -1,0 +1,289 @@
+/* Faiza Berrichi
+   version :01.01
+   date:19/02
+   */
+
+*{margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255);
+	
+}
+button {
+	font-family: 'Poppins', sans-serif;
+}
+
+header {
+   background-color: rgba(0, 0, 0, 0.11);
+	display: flex;
+	height: 10vh;
+	align-items: center;
+    width: 95%;
+    margin: auto;
+}
+
+.logo-container,
+.nav-links,
+.cart {
+	display: flex;
+}
+
+.logo-container {
+	flex: 1;
+}
+
+nav {
+	flex: 2;
+}
+.nav-links {
+	justify-content: space-around;
+	list-style: none;
+}
+.nav-link {
+	color: #5f5f79;
+	font-size: 18px;
+	text-decoration: none;
+}
+.cart {
+	flex: 1;
+	justify-content: flex-end;
+}
+nav a:hover{
+    color:#940dc1
+}
+
+.presentation {
+	display: flex;
+	width: 90%;
+	margin: auto;
+	min-height: 80vh;
+	align-items: center;
+}
+.introduction {
+	flex: 1;
+}
+.intro-text h1 {
+	font-size: 35px;
+	font-weight: 500;
+	color: #6f6f89;
+}
+.intro-text p {
+	margin-top: 5px;
+	font-size: 22px;
+	color: #585772;
+}
+.cta {
+	padding: 50px 0px 0px 0px;
+}
+.cta-select {
+	border: 2px solid#940dc1;
+	background: transparent;
+	color: #940dc1;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+}
+.cta-add {
+	background: #940dc1;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	color: white;
+	margin: 30px 0px 0px 30px;
+}
+
+.cover {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 60vh;
+}
+.cover img {
+	height: 100%;
+	filter: drop-shadow(0px 5px 3px gray);
+	animation: drop 1.5s ease;
+}
+
+.big-circle {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+	opacity: 0.5;
+	height: 80%;
+}
+.medium-circle {
+	position: absolute;
+	top: 30%;
+	right: 30%;
+	z-index: -1;
+	height: 60%;
+	opacity: 0.4;
+}
+
+.sport{
+    margin-top:80px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 32px;
+    margin-right: 5px;
+    width: 100%;
+}
+.sport img{
+    filter: drop-shadow(0px 5px 3px gray);
+}
+.position1{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.position1 h2{
+    font-weight: 500;
+	color:#585772;
+    text-decoration: underline;
+}
+.position2{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.position2 h2{
+    font-weight: 500;
+	color:#585772;
+    text-decoration: underline;
+}
+.icone{
+    margin-top: 60px;
+    display: flex;
+}
+.icone p{
+    color: #585772;
+    font-size: 14px;
+    text-align: center;
+}
+.icone img {
+    margin-left:38%;
+}
+.banniere{
+    margin-top: 50px;
+	max-width: 100%;
+}
+.position3 h2{
+    font-weight: 500;
+	color:#585772;
+    text-decoration: underline;
+}
+.position3{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.témoignages{
+    margin-top: 60px;
+    display: flex;
+	flex-wrap: nowrap;	
+}
+.témoignages p{
+    color: #585772;
+    font-size: 14px;
+    text-align: center;
+}
+.témoignages img{
+    margin-left:38%;
+	margin-top: 10px;
+	filter: drop-shadow(3px 5px 3px gray);
+}
+.position4{
+	color:#dbdada;
+	background-color: black;
+	margin-top:100px;
+	height: 200%;
+}
+.footer{
+display: flex;
+justify-content:space-between ;
+}
+.footer p{
+	margin:40px
+}
+
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	body{
+	margin:0px;
+	}
+	.presentation {
+		flex-direction: column;
+	}
+	.introduction {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	.intro-text h1 {
+		font-size: 30px;
+	}
+	.intro-text p {
+		font-size: 18px;
+	}
+	.cta {
+		padding: 10px 0px 0px 0px;
+	}
+
+	.cover img {
+		height: 80%;
+	}
+	.small-circle,
+	.medium-circle,
+	.big-circle {
+		opacity: 0.2;
+	}
+    nav{
+        display: none;
+    }
+    .icone{
+        display: flex;
+        flex-direction: column;
+    }
+    .sport{
+        display: flex;
+        flex-direction: column;
+    }
+    .sport img{
+        margin-top:10px;
+    }
+    .logo-container img{
+        width:190px;
+        margin-left:30%;
+    }
+    .cart{
+        display: none;
+    }
+	.témoignages{
+		display: flex;
+		flex-direction: column;
+	}
+	.footer{
+		display: flex;
+		flex-direction: column;
+	}
+		
+	
+}
